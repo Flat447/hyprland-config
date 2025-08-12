@@ -1,4 +1,4 @@
-# hyprland-confihg
+# hyprland-config
 ## Шаг 1
 **Установка пакетов**
 ```shell
