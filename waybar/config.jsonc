@@ -29,6 +29,7 @@
         "group/quicklinks",
         "hyprland/window",
         "custom/empty"
+//	"group/hardware"
     ],
 
     // Modules Center
@@ -43,13 +44,15 @@
         "bluetooth",
         "battery", 
         "network",
-        "group/hardware",
-        "custom/cliphist",
-        "idle_inhibitor",
-        "tray",
-        "custom/exit",
-        "custom/ml4w-welcome",
-        "clock"
+//        "group/hardware",
+//	"custom/empty",
+//        "custom/cliphist",
+//	"custom/empty",
+//        "idle_inhibitor",
+//        "tray",
+        "clock",
+//        "custom/ml4w-welcome",
+        "custom/exit"
     ]
 }
 

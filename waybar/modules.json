@@ -75,7 +75,7 @@
     // Filemanager Launcher
     "custom/filemanager": {
         "format": "",
-        "on-click": "thunar",
+        "on-click": "nautilus",
         "tooltip": false
     },
 
@@ -91,7 +91,7 @@
         // START APPS LABEL
         "format": "Apps",
         // END APPS LABEL
-        "on-click": "sleep 0.2;wofi -show drun -replace",
+        "on-click": "sleep 0.2;wofi --show drun ",
         "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
         "tooltip": false
     },
