@@ -27,9 +27,11 @@
         "group/settings",
         "wlr/taskbar",
         "group/quicklinks",
-        "hyprland/window",
-        "custom/empty"
+//        "hyprland/window",
+        "custom/empty",
+        "hyprland/language"
 //	"group/hardware"
+//        "custom/calculator"
     ],
 
     // Modules Center
@@ -39,6 +41,7 @@
 
     // Modules Right    
     "modules-right": [
+	"custom/calculator",
         "custom/updates",
         "pulseaudio",
         "bluetooth",
