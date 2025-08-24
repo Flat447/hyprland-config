@@ -81,7 +81,7 @@
 
     // Calculator
     "custom/calculator": {
-        "format": "",
+        "format": "🖩",
         "on-click": "qalculate-gtk",
         "tooltip": false
     },
@@ -98,15 +98,15 @@
 
     // Wofi Application Launcher
     "custom/appmenuicon": {
-        "format": "",
-        "on-click": "wofi -show drun -replace",
+        "format": "☢",
+        "on-click": "wofi --show drun ",
         "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
         "tooltip": false
     },    
 
     // Power Menu
     "custom/exit": {
-        "format": "",
+        "format":"⏻",
         "on-click": "wlogout",
         "tooltip": false
     },

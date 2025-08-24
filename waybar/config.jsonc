@@ -23,12 +23,12 @@
 
     // Modules Left
     "modules-left": [
-        "custom/appmenu",
-        "group/settings",
+        "custom/appmenuicon",
+//        "group/settings",
         "wlr/taskbar",
         "group/quicklinks",
 //        "hyprland/window",
-        "custom/empty",
+//        "custom/empty",
         "hyprland/language"
 //	"group/hardware"
 //        "custom/calculator"
@@ -42,7 +42,7 @@
     // Modules Right    
     "modules-right": [
 	"custom/calculator",
-        "custom/updates",
+//        "custom/updates",
         "pulseaudio",
         "bluetooth",
         "battery", 
