@@ -23,41 +23,117 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
-  box-shadow: inset 0 -3px #ffffff;
+  box-shadow: inset 0 -3px #333c43;
 }
-
+#cava {
+  padding: 0 10px;
+  background-color: #ffffff;
+  color: #000000;
+}
 /* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-  background-color: @surface2;
+#pulseaudio {
+  background-color: #5C3F4F;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+}
+#network {
+  background-color: @yellow;
+}
+#quicklinks {
+  color: green;
 }
 
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
-  color: @rosewater;
+  color: #1e2326;
 }
-
+#custom-poweroff {
+  color: #1e2326;
+  background-color: #464f50;
+  border-radius: 0 25px 25px 0;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+  border-right: 2px solid #1e2326;
+}
+#custom-logout {
+  color: #1e2326;
+  background-color: #464f50;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+  border-left: 2px solid #1e2326;
+}
+#custom-lock {
+  color: #1e2326;
+  background-color: #464f50;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+}
+#custom-reboot {
+  color: #1e2326;
+  background-color: #464f50;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+}
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 0 5px;
 }
 
-#workspaces button.focused {
-  background-color: @rosewater;
-  color: @base;
-  box-shadow: inset 0 -3px #ffffff;
+#custom-appmenu {
+  background-color: #464f50;
+  color: #1e2326;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top: 2px solid #1e2326;
+  border-left: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
 }
-
+#workspaces button.active {
+  background-color: #464f50;
+  color: #1e2326;
+  border-radius: 27px;
+  padding: 0 5px;
+  border: 2px solid #1e2326;
+}
 #workspaces button.urgent {
   background-color: #eb4d4b;
+  border-radius: 27px;
+  padding: 0 5px;
+  border: 2px solid rgba(255, 0, 0, 1);
 }
 
+#language {
+  color: #1e2326;
+  background-color: #464f50;
+  border-radius: 0 25px 25px 0;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+  border-right: 2px solid #1e2326;
+}
+#taskbar {
+  background-color: #464F50;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+}
+#taskbar button:hover {
+  background-color: #1e2326;
+  border-radius: 25px;
+}
+#battery {
+  background-color: @green;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+}
 #mode {
   background-color: #64727d;
-  box-shadow: inset 0 -3px #ffffff;
+  box-shadow: inset 0 -3px #333c43
 }
 
 #clock,
 #battery,
+#custom-cava,
 #cpu,
 #memory,
 #temperature,
@@ -67,11 +143,13 @@ button:hover {
 }
 
 #pulseaudio {
-  color: @maroon;
+  color: #1e2326;
 }
 
 #network {
-  color: @yellow;
+  color: #1e2326;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
 }
 
 #temperature {
@@ -79,13 +157,25 @@ button:hover {
 }
 
 #battery {
-  color: @green;
+  color: #1e2326;
 }
 
 #clock {
-  color: @flamingo;
+  background-color: @flamingo;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
 }
-
+#custom-calculator {
+  color: #1e2326;
+  background-color: #464F50;
+  border-radius: 25px 0 0 25px;
+  border-left: 2px solid #1e2326;
+  border-top: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+}
+#clock {
+  color: #1e2326;
+}
 #cpu {
   color: @peach;
 }
@@ -115,10 +205,6 @@ button:hover {
 .modules-center {
   padding: 0 10px;
 }
-#battery.charging,
-#battery.plugged {
-  color: @sapphire;
-}
 
 @keyframes blink {
   to {
@@ -129,7 +215,7 @@ button:hover {
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
   background-color: #f53c3c;
-  color: #ffffff;
+  color: #333c43;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
@@ -142,5 +228,5 @@ label:focus {
 }
 
 #pulseaudio.muted {
-  color: @text;
+  color: #1e2326;
 }

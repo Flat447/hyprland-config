@@ -23,14 +23,12 @@
 
     // Modules Left
     "modules-left": [
-        "custom/appmenuicon",
 //        "group/settings",
-        "wlr/taskbar",
-        "group/quicklinks",
 //        "hyprland/window",
 //        "custom/empty",
-        "hyprland/language"
+//        "custom/cava"
 //	"group/hardware"
+          "group/lefter"
 //        "custom/calculator"
     ],
 
@@ -55,7 +53,7 @@
 //        "tray",
         "clock",
 //        "custom/ml4w-welcome",
-        "custom/exit"
+        "group/power"
     ]
 }
 
