@@ -2,7 +2,7 @@
 ## Step 1
 **Download packges**
 ```shell
-sudo pacman -S rofi kitty freetype2 fish git hyprlock wl-clipboard wl-clip-persist cliphist swww waybar ttf-font-awesome otf-font-awesome ttf-jetbrains-mono pavucontrol nemo nwg-look fastfetch file powerline-fonts inetutils ttf-font-awesome otf-font-awesome ttf-jetbrains-mono ttf-dejavu bluez bluez-utils blueman xorg-xwayland vlc fastfetch
+sudo pacman -S rofi kitty freetype2 fish git hyprlock wl-clipboard wl-clip-persist cliphist swww waybar ttf-font-awesome otf-font-awesome nemo cmus ttf-jetbrains-mono pavucontrol nemo nwg-look fastfetch file powerline-fonts inetutils ttf-font-awesome otf-font-awesome ttf-jetbrains-mono ttf-dejavu bluez bluez-utils blueman xorg-xwayland vlc fastfetch
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
