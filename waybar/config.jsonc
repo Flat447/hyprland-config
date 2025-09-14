@@ -17,19 +17,15 @@
     "margin-left": 0,
     "margin-right": 0,    
     "spacing": 0,
-
+    "height": 30,
     // Load Modules
     "include": ["~/.config/waybar/modules.json"],
 
     // Modules Left
     "modules-left": [
-//        "group/settings",
-//        "hyprland/window",
-//        "custom/empty",
-//        "custom/cava"
-//	"group/hardware"
-          "group/lefter"
-//        "custom/calculator"
+          "group/lefter",
+          "custom/cmus",
+          "custom/weather"
     ],
 
     // Modules Center
@@ -39,21 +35,13 @@
 
     // Modules Right    
     "modules-right": [
-	"custom/calculator",
-//        "custom/updates",
+        "custom/swaync",
         "pulseaudio",
         "bluetooth",
         "battery", 
         "network",
-//        "group/hardware",
-//	"custom/empty",
-//        "custom/cliphist",
-//	"custom/empty",
-//        "idle_inhibitor",
-//        "tray",
         "clock",
-//        "custom/ml4w-welcome",
-        "group/power"
+        "custom/poweroff"
     ]
 }
 

@@ -2,11 +2,12 @@
 
 * {
   font-family: "JetBrains Mono", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+  min-height: 10px;
 }
 
 window#waybar {
-  background-color: @base;
+  background-color: transparent;
   border-radius: 13px;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -25,20 +26,63 @@ button:hover {
   background: inherit;
   box-shadow: inset 0 -3px #333c43;
 }
-#cava {
+#custom-weather {
+  background-color: #464f50;
+  color: #1e2326;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+#custom-swaync {
+  border: 2px solid #1e2326;
+  background-color: #464f50;
+  border-radius: 5px;
   padding: 0 10px;
-  background-color: #ffffff;
-  color: #000000;
+  color: #1e2326;
+}
+#custom-zapret {
+  background-color: #464f50;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+#custom-cmus {
+  background-color: #464f50;
+  border: 2px solid #1e2326;
+  color: #3C4841;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+#tray {
+  background-color: #464f50;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
+  padding:0 10px;
 }
 /* you can set a style on hover for any module like this */
 #pulseaudio {
-  background-color: #5C3F4F;
+  background-color: #464f50;
   border-top: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
+  border: 2px solid #1e2336;
+  color: #4C3743;
+  border-radius: 5px;
+  border-left: 2px solid #1e2326;
 }
 #network {
-  background-color: @yellow;
+  color: #45443C;
+  background-color: #464f50;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
 }
+#cava {
+  color: #ffffff;
+  background-color: #464f50;
+  border-radius: 5px;
+  border: 2px solid #1e2326;
+  padding: 0 5px;
+}
+
 #quicklinks {
   color: green;
 }
@@ -46,109 +90,110 @@ button:hover {
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
-  color: #1e2326;
+  color: #464F50;
 }
 #custom-poweroff {
   color: #1e2326;
   background-color: #464f50;
-  border-radius: 0 25px 25px 0;
+  border-radius: 5px;
   border-top: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
   border-right: 2px solid #1e2326;
+  border: 2px solid #1e2336;
 }
 #custom-logout {
   color: #1e2326;
   background-color: #464f50;
   border-top: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
-  border-left: 2px solid #1e2326;
+  border: 2px solid #1e2326;
 }
 #custom-lock {
   color: #1e2326;
   background-color: #464f50;
   border-top: 2px solid #1e2326;
-  border-bottom: 2px solid #1e2326;
+  border: 2px solid #1e2326;
 }
 #custom-reboot {
   color: #1e2326;
   background-color: #464f50;
   border-top: 2px solid #1e2326;
-  border-bottom: 2px solid #1e2326;
+  border: 2px solid #1e2326;
 }
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 0 5px;
 }
 
 #custom-appmenu {
   background-color: #464f50;
   color: #1e2326;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top: 2px solid #1e2326;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 8px;
+  border: 2px solid #1e2326;
   border-left: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
 }
 #workspaces button.active {
   background-color: #464f50;
   color: #1e2326;
-  border-radius: 27px;
+  border-radius: 5px;
   padding: 0 5px;
   border: 2px solid #1e2326;
 }
 #workspaces button.urgent {
   background-color: #eb4d4b;
-  border-radius: 27px;
-  padding: 0 5px;
+  border-radius: 5px;
   border: 2px solid rgba(255, 0, 0, 1);
 }
+#workspace button.urgent:hover {
+  box-shadow: inset 0 -3px #9e0000;
+}
+
 
 #language {
   color: #1e2326;
   background-color: #464f50;
-  border-radius: 0 25px 25px 0;
   border-top: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
-  border-right: 2px solid #1e2326;
+  border-radius: 5px;
+  border: 2px solid #1e2326;
 }
 #taskbar {
   background-color: #464F50;
-  border-top: 2px solid #1e2326;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
   border-bottom: 2px solid #1e2326;
 }
 #taskbar button:hover {
   background-color: #1e2326;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 #battery {
-  background-color: @green;
-  border-top: 2px solid #1e2326;
+  color: #3C4841;
+  background-color: #464f50;
+  border: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
+}
+#battery.charging {
+  color: #3F5865;
 }
 #mode {
   background-color: #64727d;
   box-shadow: inset 0 -3px #333c43
 }
 
-#clock,
-#battery,
-#custom-cava,
-#cpu,
-#memory,
-#temperature,
-#network,
-#pulseaudio {
-  padding: 0 10px;
+#bluetooth {
+  border: 2px solid #1e2326;
+  border-bottom: 2px solid #1e2326;
+  color: #4F5B58;
+  border-radius: 5px;
+  background-color: #464f50;
 }
-
-#pulseaudio {
-  color: #1e2326;
-}
-
 #network {
-  color: #1e2326;
-  border-top: 2px solid #1e2326;
+  border: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
 }
 
@@ -157,24 +202,46 @@ button:hover {
 }
 
 #battery {
-  color: #1e2326;
+  color: #3C4841;
+  border-radius: 5px;
+}
+#custom-poweroff,
+#custom-lock,
+#custom-logout,
+#custom-reboot {
+  border-radius: 5px;
 }
 
+#clock,
+#custom-poweroff,
+#custom-lock,
+#custom-logout,
+#custom-reboot,
+#language,
+#custom-appmenu,
+#battery,
+#custom-cava,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio {
+  padding: 3px 10px;
+}
 #clock {
-  background-color: @flamingo;
-  border-top: 2px solid #1e2326;
+  color: #374145;
+  background-color: #464f50;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
   border-bottom: 2px solid #1e2326;
 }
 #custom-calculator {
   color: #1e2326;
   background-color: #464F50;
-  border-radius: 25px 0 0 25px;
-  border-left: 2px solid #1e2326;
+  border-radius: 5px;
+  border: 2px solid #1e2326;
   border-top: 2px solid #1e2326;
   border-bottom: 2px solid #1e2326;
-}
-#clock {
-  color: #1e2326;
 }
 #cpu {
   color: @peach;
@@ -227,6 +294,4 @@ label:focus {
   background-color: #000000;
 }
 
-#pulseaudio.muted {
-  color: #1e2326;
-}
+
