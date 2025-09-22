@@ -25,7 +25,7 @@
     "modules-left": [
           "group/lefter",
           "custom/cmus",
-          "custom/weather"
+          "custom/nemo"
     ],
 
     // Modules Center
@@ -35,7 +35,6 @@
 
     // Modules Right    
     "modules-right": [
-        "custom/swaync",
         "pulseaudio",
         "bluetooth",
         "battery", 

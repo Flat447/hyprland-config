@@ -33,6 +33,21 @@ button:hover {
   border-radius: 5px;
   padding: 3px 10px;
 }
+#custom-nemo {
+  background-color: #464f50;
+  color: #1e2326;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
+  padding: 0 10px;
+  color: #1e2326;
+}
+#custom-cpupower {
+  background-color: #464f50;
+  border: 2px solid #1e2326;
+  border-radius: 5px;
+  padding: 0 10px;
+  color: #1e2326;
+}
 #custom-swaync {
   border: 2px solid #1e2326;
   background-color: #464f50;
@@ -90,7 +105,7 @@ button:hover {
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
-  color: #464F50;
+  color: #1e2326;
 }
 #custom-poweroff {
   color: #1e2326;
@@ -148,7 +163,7 @@ button:hover {
   border-radius: 5px;
   border: 2px solid rgba(255, 0, 0, 1);
 }
-#workspace button.urgent:hover {
+#workspaces button.urgent:hover {
   box-shadow: inset 0 -3px #9e0000;
 }
 

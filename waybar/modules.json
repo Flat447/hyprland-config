@@ -23,23 +23,37 @@
     "exec": "/home/flat/.local/share/python/waybar-wttr.py",
     "return-type": "json"
     },
+   	"custom/foot": {
+	"format": "",
+	"on-click": "exec foot --title=home -c ~/.config/hypr/themes/hypr_strws/foot.ini",
+	"tooltip": false
+	},
+
+	"custom/nemo": {
+	"format": "󰉋",
+    "on-click": "exec nemo",
+	"tooltip": false
+	},
+
     // Workspaces
-"hyprland/workspaces" : {
-        "on-click": "activate",
-        "active-only": false,
-        "all-outputs": true,
-        "format": "{}",
-        "format-icons": {
-			"urgent": "",
-			"active": "",
-			"default": ""
-        },
-        "persistent-workspaces": {
-            // START WORKSPACES
+   "hyprland/workspaces": {
+    "format": "{icon} {windows}",
+    "active-only": false,
+    "all-outputs": true,
+    "workspace-taskbar": {
+        "enable": true,
+        "format": "{icon}",
+        "icon-size": 18,
+        "on-click-window": "~/.config/waybar/scripts/focus-window.sh {address} {button}"
+    },
+    "persistent-workspaces": {
+    // START WORKSPACES
     "*": 5
-            // END WORKSPACES
-        }       
-    },   "wlr/taskbar": {
+    // END WORKSPACES
+    }       
+
+},
+ "wlr/taskbar": {
         "format": "{icon}",
         "format-empty": " ",
         "icon-size": 18,
@@ -68,11 +82,21 @@
         },
         "separate-outputs": true
     },
-    "custom/cmus": {
-      "tooltip": false,
-      "format": "▶ CMUS",
-      "on-click": "kitty --title cmus --hold cmus"
-    },
+	"custom/cmus": {
+	"format": "{icon} CMUS",
+	"format-icons": {
+		"default": [""]
+		},
+		"max-length": 15,
+		"interval": 1,
+		"exec": "cmus-remote -C \"format_print '%F'\"",
+		"exec-if": "pgrep cmus",
+		"on-click": "cmus-remote -u",
+		"on-scroll-up": "cmus-remote --next",
+		"on-scroll-down": "cmus-remote --prev",
+		"escape": true,
+		"tooltip": false
+	},
     "cava": {
         // "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
         "framerate": 30,
@@ -237,7 +261,9 @@
     }, 
 
     "hyprland/language": {
-        "format": "Lang:{short} "
+        "format": "<span color=\"#4C3743\">:</span>{} ",
+        "format-en": "EN",
+        "format-ru": "РУ"
     },
 
     // Group Hardware
@@ -306,7 +332,11 @@
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " "]
     },
-
+    "custom/cpupower": {
+        "format": "CPUpower",
+        "tooltip": false,
+        "on-click": "exec ~/.config/rofi/scripts/cpumenu.sh"
+    },
     // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
