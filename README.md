@@ -25,7 +25,7 @@ cd hyprland-config/
 cp -r kitty waybar wlogout rofi hypr fastfetch ~/.config
 sudo cp -r Everforest-Dark /usr/share/themes/
 sudo cp -r Everforest-Dark /usr/share/icons/ 
-sudo cp -r Everforest-cursors /usr/share/icons/
+sudo cp -r Future-dark-cursors /usr/share/icons/
 ```
 ## Step 4
 **Fish**
